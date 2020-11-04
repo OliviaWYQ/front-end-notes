@@ -9,7 +9,7 @@ brazil ws sync --md
 ```
 if it still fails, clean the workspace and build every package
 ```
-brazil-recursive-cmd brazil build clean
+brazil-recursive-cmd brazil-build clean
 brazil ws clean
 brazil ws sync
 brazil ws sync --md
