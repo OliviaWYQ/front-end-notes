@@ -1,6 +1,6 @@
 # Brazil notes
 
-## What to do when brazil-build fail
+## What to do when brazil-build fails
 
 First try to sync the latest content for all packages
 ```
@@ -17,7 +17,7 @@ brazil-build clean
 brazil-build release
 ```
 
-## When Android configuration stuck on 0% and then fail
+## When Android configuring stucks on 0% and then fails
 
 ```
 cat ~/brazil-pkg-cache/s3proxy.config
