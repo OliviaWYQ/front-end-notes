@@ -39,12 +39,12 @@ brazil ws use -p <package-name>
 
 ## Debug mode
 
-``
+```
 cd <path-to-AxleReactNative>
 brazil-build start
 
 cd <path-to-package>
 brazil-build server-axle
-``
+```
 
 
