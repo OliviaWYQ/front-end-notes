@@ -2,7 +2,7 @@
 
 ## What to do when brazil-build fail
 
-First try
+First try to sync the latest content for all packages
 ```
 brazil ws sync
 brazil ws sync --md
@@ -17,7 +17,8 @@ brazil-build clean
 brazil-build release
 ```
 
-## When brazil-build stuck
+## When Android configuration stuck on 0% and then fail
+
 ```
 cat ~/brazil-pkg-cache/s3proxy.config
 ```
@@ -28,6 +29,7 @@ brazil-package-cache start
 ```
 
 ## When a single package always fails
+
 delete it and download a new one
 ```
 cd <path-to-src>
