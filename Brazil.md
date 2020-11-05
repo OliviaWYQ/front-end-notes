@@ -16,3 +16,12 @@ brazil ws sync --md
 brazil-build clean
 brazil-build release
 ```
+## When brazil-build stuck
+```
+cat ~/brazil-pkg-cache/s3proxy.config
+```
+change this content into a proper one, save and restart brazil package cache
+```
+brazil-package-cache stop
+brazil-package-cache start
+```
