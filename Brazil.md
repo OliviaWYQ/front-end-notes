@@ -22,7 +22,19 @@ brazil-build release
 ```
 cat ~/brazil-pkg-cache/s3proxy.config
 ```
-change this content into a proper one, save and restart brazil package cache
+change this content into a proper one and save 
+
+For example:
+```
+vim ~/brazil-pkg-cache/s3proxy.config
+```
+change the first line into
+```
+http://braziledgecache-cn-north-1.corp.amazon.com:6081
+:wq
+```
+
+restart brazil package cache
 ```
 brazil-package-cache stop
 brazil-package-cache start
