@@ -21,6 +21,7 @@ inside vim, change the commit message
 ```
 Now you can see 2 commits squash into one
 
+
 ## Change the commit message for the latest commit
 ```
 git commit --amend -m "your message"
@@ -30,3 +31,18 @@ git commit --amend -m "your message"
 ```
 git branch -m old-name new-name
 ```
+
+## When you rebase but face conflict
+open Visual Studio Code, and edit the file
+```
+git add .
+git rebase --continue
+```
+
+## When files loss, use reflog to see the history
+
+```
+git reflog
+git checkout -b recovery <commit-id>
+```
+
