@@ -19,3 +19,5 @@ cr -r <CR-id> -i <package-1> -i <package-2>
 
 ## How to Merge
 need the rebase and wait, when the dry run passes, select "Overide and Merge", only for the packages you have permission to merge
+
+## Put code with different versionset in separate cr
