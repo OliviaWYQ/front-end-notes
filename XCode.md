@@ -7,7 +7,6 @@ touch Dev.xcconfig
 brazil-build xcode-env
 brazil-build release
 open AxleIOS.xcworkspace
-
 ```
 
 ## IOS simulator
