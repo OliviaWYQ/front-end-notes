@@ -1,5 +1,10 @@
 # Brazil notes
 
+## Add local package to node_modules
+```
+npm install --save ../path/to/mymodule
+```
+
 ## What to do when brazil-build fails
 
 First try to sync the latest content for all packages
@@ -33,13 +38,6 @@ change the first line into
 http://braziledgecache-cn-north-1.corp.amazon.com:6081
 :wq
 ```
-
-## Add local package to node_modules
-```
-npm install --save ../path/to/mymodule
-```
-
-
 restart brazil package cache
 ```
 brazil-package-cache stop
