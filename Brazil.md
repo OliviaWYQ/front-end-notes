@@ -34,6 +34,12 @@ http://braziledgecache-cn-north-1.corp.amazon.com:6081
 :wq
 ```
 
+## Add local package to node_modules
+```
+npm install --save ../path/to/mymodule
+```
+
+
 restart brazil package cache
 ```
 brazil-package-cache stop
