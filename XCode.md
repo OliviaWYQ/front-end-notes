@@ -26,4 +26,4 @@ Test by accessibility inspector
 
     4. Select Accessibility Inspector -> Inspection -> Enable Point to Inspect.
 
-    5. Then It can read the content inside the simulator
+    5. Then it can read the content inside the simulator
