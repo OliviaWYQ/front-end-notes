@@ -18,12 +18,12 @@ press control+command+Z
 
 Test by accessibility inspector
 
-    Open Xcode -> Open Developer Tool -> Accessibility Inspector.
+    1. Open Xcode -> Open Developer Tool -> Accessibility Inspector.
 
-    Go to System Preferences -> Sevurity & Privacy -> Allow Accessibility Inspector to control your computer.
+    2. Go to System Preferences -> Sevurity & Privacy -> Allow Accessibility Inspector to control your computer.
 
-    Open Accessibility Inspector and select the specific device: Simulator - iPhone 8.
+    3. Open Accessibility Inspector and select the specific device: Simulator - iPhone 8.
 
-    Select Accessibility Inspector -> Inspection -> Enable Point to Inspect.
+    4. Select Accessibility Inspector -> Inspection -> Enable Point to Inspect.
 
-    Then It can read the content inside the simulator
+    5. Then It can read the content inside the simulator
