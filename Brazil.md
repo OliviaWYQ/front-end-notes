@@ -1,5 +1,10 @@
 # Brazil notes
 
+## permission
+```
+kinit -f && mwinit -o
+```
+
 ## Add local package to node_modules
 ```
 npm install --save ../path/to/mymodule
