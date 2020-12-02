@@ -46,6 +46,7 @@ http://braziledgecache-cn-north-1.corp.amazon.com:6081
 restart brazil package cache
 ```
 brazil-package-cache stop
+brazil-package-cache clean --days 0 --keepCacheHours 0 
 brazil-package-cache start
 ```
 
