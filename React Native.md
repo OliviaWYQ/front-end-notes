@@ -6,10 +6,10 @@ use setTimeout to make setState a synchronous function
 
 ```
 setTimeout(() => {
-                 this.setState({
-                     state: data
-                 })
-             })
+   this.setState({
+       state: data
+   })
+})
 ```
 
 ## Lazy init 
