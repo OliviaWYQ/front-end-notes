@@ -1,5 +1,21 @@
 # React Native Notes
 
+## concat strings
+
+1. 
+f(){
+   const apple = 'apple'
+   const banana = 'banana'
+   return apple + ' ' + banana
+}
+
+2. a safer function
+f(){
+   const apple = 'apple'
+   const banana = 'banana'
+   return `{$apple} {$banana}`
+}
+
 ## synchronously and unsynchrously update in setState 
 
 use setTimeout to make setState a synchronous function
