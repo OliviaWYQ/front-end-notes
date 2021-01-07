@@ -11,7 +11,7 @@ f(){
 }
 ```
 
-2. a safer function
+2. 
 ```
 f(){
    const apple = 'apple'
@@ -19,6 +19,14 @@ f(){
    return `{$apple} {$banana}`
 }
 ```
+
+3. localization safe
+```
+apple: '{color} color'
+
+appLocalization.getString('apple', {color: 'red'})
+```
+will show as 'red color'
 
 ## synchronously and unsynchrously update in setState 
 
