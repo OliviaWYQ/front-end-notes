@@ -5,6 +5,7 @@ brazil ws use -p AxleIOS --latest
 cd src/AxleIOS
 touch Dev.xcconfig
 brazil-build xcode-env
+rm Podfile.lock
 brazil-build release
 open AxleIOS.xcworkspace
 ```
