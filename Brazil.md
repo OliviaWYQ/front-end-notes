@@ -52,6 +52,9 @@ brazil-package-cache start
 ```
 brazil-package-cache stop && brazil-package-cache start --debug
 ```
+```
+brazil-package-cache enable_edge_cache
+```
 
 ## When a single package always fails
 
