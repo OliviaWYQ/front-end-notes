@@ -49,6 +49,9 @@ brazil-package-cache stop
 brazil-package-cache clean --days 0 --keepCacheHours 0 
 brazil-package-cache start
 ```
+```
+brazil-package-cache stop && brazil-package-cache start --debug
+```
 
 ## When a single package always fails
 
