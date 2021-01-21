@@ -46,3 +46,12 @@ git reflog
 git checkout -b recovery <commit-id>
 ```
 
+## Revert CR
+
+Go to the link and find out commit id, eg. https://code.amazon.com/packages/AxleAppReactNative/commits/76013ae5670f73e23975ae83e653718622610a29#
+```
+cd AxleAppReactNative
+git pull
+git revert 76013ae5670f73e23975ae83e653718622610a29
+cr
+```
