@@ -53,5 +53,5 @@ Go to the link and find out commit id, eg. https://code.amazon.com/packages/Axle
 cd AxleAppReactNative
 git pull
 git revert 76013ae5670f73e23975ae83e653718622610a29
-cr
 ```
+rebase and create a new cr
