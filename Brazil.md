@@ -57,6 +57,30 @@ brazil-package-cache disable_edge_cache
 brazil-package-cache enable_edge_cache
 ```
 
+## Instruction for enabling BrazilCDN
+
+0. Ensure you are using BrazilCLI version 2.0.202844.0 or higher. For older versions, please update your BrazilCLI using instructions here.
+```
+brazil --version
+```
+1. Opt in BrazilCDN by setting up the BrazilCLI preference:
+```
+brazil prefs --global --key packagecache.useBrazilCdn --value true
+```
+2. As BrazilCDN doesn't require usage of edge caches,  run following commands to ensure edge caches are not enabled:
+```
+brazil prefs --global --key packagecache.disableEdgeCache --value true
+brazil prefs --global --key packagecache.edgeCache --delete --force
+```
+3. Refresh your Midway token (if you haven't done so already):
+```
+mwinit
+```
+4. Restart brazil package cache daemon:
+```
+brazil-package-cache stop && brazil-package-cache start
+```
+
 ## When a single package always fails
 
 delete it and download a new one
