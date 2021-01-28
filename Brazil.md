@@ -53,6 +53,7 @@ brazil-package-cache start
 brazil-package-cache stop && brazil-package-cache start --debug
 ```
 ```
+brazil-package-cache disable_edge_cache
 brazil-package-cache enable_edge_cache
 ```
 
