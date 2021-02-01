@@ -10,6 +10,16 @@ brazil-build release
 open AxleIOS.xcworkspace
 ```
 
+## Testing failure
+
+Testing failed:
+	Missing required module 'MobileCryptoiOS'
+	Testing cancelled because the build failed.
+
+Product -> Clean (keyboard shortcut ⌘-⇧-K)
+Clean your app project, rebuild, and your app will run on the iDevice!
+
+
 ## IOS simulator
 
 press control+command+Z
@@ -28,3 +38,4 @@ Test by accessibility inspector
     4. Select Accessibility Inspector -> Inspection -> Enable Point to Inspect.
 
     5. Then it can read the content inside the simulator
+
