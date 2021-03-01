@@ -57,3 +57,9 @@ git add .
 git revert --continue
 cr
 ```
+
+## Git reset 
+
+$ git reset HEAD^            # 回退所有内容到上一个版本  
+$ git reset HEAD^ hello.php  # 回退 hello.php 文件的版本到上一个版本  
+$ git  reset  052e           # 回退到指定版本
