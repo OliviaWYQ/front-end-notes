@@ -4,21 +4,25 @@
 ```
 git branch -a
 ```
+```
   master
   remotes/origin/HEAD -> origin/master
   remotes/origin/dev
   remotes/origin/master
+```
   
 To create a local branch dev from remotes/origin/dev:
 ```
 git fetch origin dev:dev
 ```
 then you see:
+```
   dev
   master
   remotes/origin/HEAD -> origin/master
   remotes/origin/dev
   remotes/origin/master
+```
 
 ```
 git checkout dev
