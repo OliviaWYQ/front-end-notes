@@ -1,5 +1,31 @@
 # Git notes
 
+## track remote branch
+```
+git branch -a
+```
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+  
+To create a local branch dev from remotes/origin/dev:
+```
+git fetch origin dev:dev
+```
+then you see:
+  dev
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+
+```
+git checkout dev
+git branch --set-upstream-to=origin/dev 
+```
+it will track the content from the remote branch
+
 ## Pull the latest code from the server
 ```
 git checkout mainline
