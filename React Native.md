@@ -1,5 +1,108 @@
 # React Native Notes
 
+## two-way data transfer
+
+1. get state from BiometricDetailsMembershipGatedHeaderContent, and transfer it to BiometricDetailPage.
+2. use props to transfer ActivityMembershipUpsellModal as a whole component to BiometricDetailsMembershipGatedHeaderContent
+3. update state inside ActivityMembershipUpsellModal from the parent stateshowModal when clicking 'SEE MEMEBERSHIP BENEFIT' button or 'Close' button
+
+AxleAppReactNative: src/pages/BiometricDetailPage/BiometricDetailPage.tsx
+
+```
+ // transfer showModal state from AxleSlacReactNativePlatform
+     let setShowModalPointer: React.Dispatch<React.SetStateAction<boolean>>
+     const [showMembershipUpsellModal, setShowMembershipUpsellModal] = useState<boolean>(false)
+     const onCloseMembershipUpsellModal = useCallback(
+         () => {
+             setShowMembershipUpsellModal(false)
+             setShowModalPointer(false)
+         },
+         [setShowMembershipUpsellModal]
+     )
+  
+     const upsellModalHandler = (showModal: boolean, setShowModal: React.Dispatch<React.SetStateAction<boolean>>) => {
+         setShowModalPointer = setShowModal
+         useEffect(
+             () => {
+                 setShowMembershipUpsellModal(showModal)
+             },
+             [showModal]
+         )
+     }
+  
+     return (
+         <SlacBiometricDetailPageLayoutWithGraphQueryless
+             // tslint:disable-next-line
+             upsellModalInfo={upsellModalHandler.bind(this)}
+             customizedMembershipUpsellModalComponent={
+                 <ActivityMembershipUpsellModal
+                     testID={'activity-biometric-detail-membership-upsell-modal'}
+                     onCloseModal={onCloseMembershipUpsellModal}
+                     visible={showMembershipUpsellModal}
+                 />
+             }
+         />
+     )
+ }
+
+```
+
+AxleSlacReactNativePlatform: src/components/biometric-detail-page/components/BiometricDetailsMembershipGatedHeader.tsx
+
+```
+     const [showModal, setShowModal] = useState<boolean>(false)
+     const onLockButtonPress = useCallback(
+         () => {
+             setShowModal(true)
+         },
+         [showModal, setShowModal]
+     )
+     const showMembershipUpsellModal = () => {
+         if (props.customizedMembershipUpsellModalComponent && props.upsellModalInfo) {
+             props.upsellModalInfo(showModal, setShowModal)
+             return props.customizedMembershipUpsellModalComponent
+         } else {
+             return null
+         }
+     }
+     return (
+          <View>
+             <BiometricDetailsMembershipGatedHeaderContent
+                 onLockButtonPress={onLockButtonPress}
+             />
+             {showMembershipUpsellModal()}
+         </View>
+     )
+ }
+```
+
+AxleSlacReactNativePlatform: src/components/biometric-detail-page/SlacBiometricDetailPageLayoutWithGraphQueryless.tsx
+
+```
+/**
+  *  types passing from customized membership upsell modal
+  */
+ export interface SlacBiometricDetailPageMembershipUpsellModalProps {
+     upsellModalInfo?: (showModal: boolean, setShowModal: React.Dispatch<React.SetStateAction<boolean>>) => void
+     customizedMembershipUpsellModalComponent?: JSX.Element
+ }
+
+...
+...
+...
+
+            valueSection = (
+                 <BiometricDetailsMembershipGatedHeader
+                     upsellModalInfo={this.props.upsellModalInfo}
+                     customizedMembershipUpsellModalComponent={this.props.customizedMembershipUpsellModalComponent}
+                     {...this.props.membershipHeaderProps}
+                     currentMembershipStatus={this.props.currentMembershipStatus}
+                     historicalMembershipStatus={this.props.biometricHistoricalMembershipStatus}
+                 />
+             )
+```
+
+
 ## concat strings
 
 1. 
