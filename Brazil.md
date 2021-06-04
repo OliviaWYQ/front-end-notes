@@ -10,6 +10,8 @@ alias bbr="brazil-build release"
 
 alias abb='brazil ws clean; brazil-recursive-cmd --allPackages brazil-build release'
 
+bb fix do both format-fix and lint-fix
+
 
 ## permission
 ```
