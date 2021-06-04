@@ -1,5 +1,19 @@
 # Git notes
 
+## change the last commit
+```
+git commit --amend
+```
+=
+```
+git add .
+git commit -m "x"
+git log --oneline -5
+git rebase -i xxx
+squash
+wq
+```
+
 ## track remote branch
 ```
 git branch -a
