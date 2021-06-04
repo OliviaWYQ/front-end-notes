@@ -1,5 +1,16 @@
 # Brazil notes
 
+## alias
+
+alias bb="brazil-build"
+
+alias bws="brazil ws"
+
+alias bbr="brazil-build release"
+
+alias abb='brazil ws clean; brazil-recursive-cmd --allPackages brazil-build release'
+
+
 ## permission
 ```
 kinit -f && mwinit -o
