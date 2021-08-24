@@ -19,11 +19,11 @@ brazil setup platform-support
 
 brazil setup --ruby
 Ruby1.9 path (i.e the path of ruby executable)
-[/usr/bin/ruby]: 
+[]: 
 Ruby2.1 path (i.e the path of ruby executable)
-[/usr/bin/ruby]: 
+[]: 
 Ruby2.3 path (i.e the path of ruby executable)
-[/usr/bin/ruby]:
+[]:/usr/bin/ruby
 ```
 
 ## Testing failure
