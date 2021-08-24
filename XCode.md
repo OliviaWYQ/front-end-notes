@@ -13,7 +13,10 @@ open AxleIOS.xcworkspace
 ### /lib64/ld-linux-x86-64.so.2: No such file or directory
 
 ```
+toolbox update
+
 brazil setup platform-support
+
 brazil setup --ruby
 Ruby1.9 path (i.e the path of ruby executable)
 [/usr/bin/ruby]: 
