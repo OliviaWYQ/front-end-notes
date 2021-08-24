@@ -12,6 +12,10 @@ alias abb='brazil ws clean; brazil-recursive-cmd --allPackages brazil-build rele
 
 bb fix do both format-fix and lint-fix
 
+## rebuild all packages
+```
+ brazil-recursive-cmd --allPackages brazil-build
+```
 
 ## permission
 ```
