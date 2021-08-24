@@ -1,3 +1,4 @@
+'''
 /**
  * Sleep edit page workflow event.
  */
@@ -69,3 +70,4 @@ export const editableSleepLogEvents = {
         })
     }
   }
+  '''
