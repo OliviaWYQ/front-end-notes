@@ -27,7 +27,7 @@ ruby-build --version
 
 brew install rbenv libyaml libffi
 
-ruby-build 2.7.2 ~/.runtimes/Ruby27x
+ruby-build 2.3.8 ~/.runtimes/Ruby23x
 ```
 
 ### You have no preference setting for Ruby 2.3.
@@ -39,8 +39,6 @@ which ruby
 brazil setup --ruby
 
 paste the path (mine's /usr/bin/ruby)
-
-
 ```
 
 
