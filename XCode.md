@@ -29,6 +29,8 @@ brew uninstall --ignore-dependencies ruby-build
 
 brew install ruby-build
 
+ruby-build --version
+
 brew install rbenv libyaml libffi
 
 ruby-build 2.7.2 ~/.runtimes/Ruby27x
