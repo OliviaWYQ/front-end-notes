@@ -80,6 +80,8 @@ brew update
 
 
 ## 查看是否替换成功
+
+重启bash
 ```
 brew config
 ```
