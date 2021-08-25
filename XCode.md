@@ -25,7 +25,7 @@ Ruby2.1 path (i.e the path of ruby executable)
 Ruby2.3 path (i.e the path of ruby executable)
 []:/usr/bin/ruby
 
- brew uninstall --force ruby-build
+brew uninstall --ignore-dependencies ruby-build
 
 brew install ruby-build
 
