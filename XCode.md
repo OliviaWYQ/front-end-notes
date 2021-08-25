@@ -19,14 +19,6 @@ toolbox update
 
 brazil setup platform-support
 
-brazil setup --ruby
-Ruby1.9 path (i.e the path of ruby executable)
-[]: 
-Ruby2.1 path (i.e the path of ruby executable)
-[]: 
-Ruby2.3 path (i.e the path of ruby executable)
-[]:/usr/bin/ruby
-
 brew uninstall --ignore-dependencies ruby-build
 
 brew install ruby-build
