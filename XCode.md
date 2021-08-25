@@ -24,6 +24,12 @@ Ruby2.1 path (i.e the path of ruby executable)
 []: 
 Ruby2.3 path (i.e the path of ruby executable)
 []:/usr/bin/ruby
+
+brew install ruby-build
+
+brew install rbenv libyaml libffi
+
+ruby-build 2.7.2 ~/.runtimes/Ruby27x
 ```
 
 ## Testing failure
