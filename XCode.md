@@ -19,6 +19,8 @@ toolbox update
 
 brazil setup platform-support
 
+brazil prefs
+
 brew uninstall --ignore-dependencies ruby-build
 
 brew install ruby-build
