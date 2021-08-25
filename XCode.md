@@ -10,9 +10,9 @@ brazil-build release
 open AxleIOS.xcworkspace
 ```
 
-### Ruby settings
+## Ruby settings
 
-## /lib64/ld-linux-x86-64.so.2: No such file or directory
+### /lib64/ld-linux-x86-64.so.2: No such file or directory
 
 ```
 toolbox update
@@ -30,7 +30,7 @@ brew install rbenv libyaml libffi
 ruby-build 2.7.2 ~/.runtimes/Ruby27x
 ```
 
-## You have no preference setting for Ruby 2.3.
+### You have no preference setting for Ruby 2.3.
 ```
 brew install rbenv ruby-build
 
@@ -39,6 +39,8 @@ which ruby
 brazil setup --ruby
 
 paste the path (mine's /usr/bin/ruby)
+
+
 ```
 
 
