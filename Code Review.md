@@ -1,5 +1,16 @@
 # Code review notes
 
+## Guide
+
+1. random hooks cause crash
+2. avoid duplicate functions
+3. remember to add detail comments and remove commented lines
+4. use React.FC instead of a function, and pass props
+5. use proper name with detail description
+6. avoid exporting unnesscessary function or const
+7. use const instead of let if possible
+8. avoid global const, use state instead, or it goes out of React updates
+
 ## Publish and update code review
 create a new code review
 ```
