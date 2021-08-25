@@ -52,7 +52,18 @@ which ruby
 
 brazil setup --ruby
 
-paste the path (mine's /usr/bin/ruby)
+Ruby1.9 path (i.e the path of ruby executable)
+[?]: 
+Ruby2.1 path (i.e the path of ruby executable)
+[?]: 
+Ruby2.3 path (i.e the path of ruby executable)
+[/Users/yiqiawan/.runtimes/Ruby23x/bin/ruby]: 
+Ruby2.4 path (i.e the path of ruby executable)
+[?]: 
+Ruby2.5 path (i.e the path of ruby executable)
+[?]: 
+Ruby2.7 path (i.e the path of ruby executable)
+[/Users/yiqiawan/.runtimes/Ruby27x/bin/ruby]: 
 ```
 
 
