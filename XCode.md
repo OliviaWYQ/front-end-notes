@@ -29,7 +29,19 @@ ruby-build --version
 
 brew install rbenv libyaml libffi
 
+brazil prefs --delete --global --key cli.bin.ruby27
+brazil prefs --delete --global --key cli.bin.ruby25
+brazil prefs --delete --global --key cli.bin.ruby24
+brazil prefs --delete --global --key cli.bin.ruby23
+brazil prefs --delete --global --key cli.bin.ruby21
+brazil prefs --delete --global --key cli.bin.ruby19
+
+ruby-build 2.7.2 ~/.runtimes/Ruby27x
+ruby-build 2.5.7 ~/.runtimes/Ruby25x
+ruby-build 2.4.9 ~/.runtimes/Ruby24x
 ruby-build 2.3.8 ~/.runtimes/Ruby23x
+ruby-build 2.1.8 ~/.runtimes/Ruby21x
+ruby-build 1.9.3-p551 ~/.runtimes/Ruby19
 ```
 
 ### You have no preference setting for Ruby 2.3.
