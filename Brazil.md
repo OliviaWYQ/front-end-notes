@@ -117,4 +117,12 @@ cd <path-to-package>
 brazil-build server-axle
 ```
 
+## dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.67.dylib
+
+```
+brew upgrade
+
+brew cleanup
+
+```
 
