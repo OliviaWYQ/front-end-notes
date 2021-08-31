@@ -10,6 +10,8 @@
 6. avoid exporting unnesscessary function or const
 7. use const instead of let if possible
 8. avoid global const, use state instead, or it goes out of React updates
+9. use switch-case for handling multiple returns
+10. not use 'else' in if-else
 
 ## Publish and update code review
 create a new code review
