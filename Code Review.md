@@ -12,6 +12,7 @@
 8. avoid global const, use state instead, or it goes out of React updates
 9. use switch-case for handling multiple returns
 10. not use 'else' in if-else
+11. remove exported if not used in other files
 
 ## Publish and update code review
 create a new code review
