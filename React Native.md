@@ -4,7 +4,7 @@
 How to catch the panResponder move event as well as the inner component touch event
 
 ```
-        topViewResponder = PanResponder.create({
+    topViewResponder = PanResponder.create({
         onStartShouldSetPanResponder: () => true,
         onMoveShouldSetPanResponder: (_evt, _gestureState) => {
             // If the user is swiping, return true and use topViewPanResponder; if it's a single click, return false and use inner touchable components
