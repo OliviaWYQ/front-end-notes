@@ -1,5 +1,22 @@
 # React Native Notes
 
+## PanResponder and TouchableOpacity
+How to catch the panResponder move event as well as the inner component touch event
+
+```
+        topViewResponder = PanResponder.create({
+        onStartShouldSetPanResponder: () => true,
+        onMoveShouldSetPanResponder: (_evt, _gestureState) => {
+            // If the user is swiping, return true and use topViewPanResponder; if it's a single click, return false and use inner touchable components
+            return Math.abs(_gestureState.dx) > 2 || Math.abs(_gestureState.dy) > 2;
+        },
+        onPanResponderGrant: (_evt, _gestureState) => {},
+        onPanResponderMove: (_evt, _gestureState) => {},
+        onPanResponderRelease: (_evt, _gestureState) => {}
+    })
+
+```
+
 ## two-way data transfer
 
 1. get state from BiometricDetailsMembershipGatedHeaderContent, and transfer it to BiometricDetailPage.
