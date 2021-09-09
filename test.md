@@ -2,19 +2,21 @@
 ```
 brazil-setup --node
 Node 16.x path (i.e the path of node executable)
-[?]: 
+[?]:
 Node 14.x path (i.e the path of node executable)
-[/usr/local/Cellar/node/14.6.0/bin/node]: 
+[?]:
 Node 12.x path (i.e the path of node executable)
-[/usr/local/opt/node@12/bin/node]: /usr/local/Cellar/node@12/12.22.5/bin/node
+[?]: /usr/local/Cellar/node@12/12.22.5/bin/node
 Node 10.x path (i.e the path of node executable)
-[/usr/local/opt/node@12/bin/node]: /usr/local/Cellar/node@12/12.22.5/bin/node
+[?]:
 Node 8.x path (i.e the path of node executable)
-[/usr/local/opt/node@12/bin/node]: /usr/local/Cellar/node@12/12.22.5/bin/node
+[?]:
 Node 6.x path (i.e the path of node executable)
-[/usr/local/opt/node@12/bin/node]: /usr/local/Cellar/node@12/12.22.5/bin/node
+[?]:
 Node other path (i.e the path of node executable)
 [?]: 
+
+export PATH="/usr/local/Cellar/node@12/12.22.5/bin:$PATH"
 ```
 
 ## Test all files
