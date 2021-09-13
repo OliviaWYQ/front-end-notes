@@ -16,7 +16,9 @@ Node 6.x path (i.e the path of node executable)
 Node other path (i.e the path of node executable)
 [?]: 
 
+vim ~/.bash_profile
 export PATH="/usr/local/Cellar/node@12/12.22.5/bin:$PATH"
+source ~/.bash_profile
 ```
 
 ## Test all files
