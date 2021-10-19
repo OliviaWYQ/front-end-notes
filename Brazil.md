@@ -1,8 +1,8 @@
 # Brazil notes
 
-## Error
+## brazil error
 
-1.system(axle-platform-build): failed to run                           
+1.error message: system(axle-platform-build): failed to run                           
                *** Be sure to declare a build-tool dependency on the package that               
   *** defines the 'axle-platform-build' command, and that the command is marked as executable.  
              Failed to run command: 'axle-platform-build' with arguments 'clean'
@@ -12,7 +12,7 @@ Todo:
 brazil ws sync --md
 ```
 
-2.SEVERE com.amazon.brazil.pkgcacher.CachingException: [UNKNOWN_ERROR] Error occurred while caching AL2_x86_64-NodeJS-8.x.319784.0-Catalog. DiskSpaceLimitException: Disk Usage is above 95%. Caching failed with /Users/yiqiawan/brazil-pkg-cache/tmp/download9033165582557653018/Catalog.
+2.error message: SEVERE com.amazon.brazil.pkgcacher.CachingException: [UNKNOWN_ERROR] Error occurred while caching AL2_x86_64-NodeJS-8.x.319784.0-Catalog. DiskSpaceLimitException: Disk Usage is above 95%. Caching failed with /Users/yiqiawan/brazil-pkg-cache/tmp/download9033165582557653018/Catalog.
  Please see https://builderhub.corp.amazon.com/docs/brazil/user-guide/howto-package-cache-cleanup.html to clean up your disk.
 
 Todo:
@@ -22,7 +22,7 @@ sudo rm -rf ~/brazil-pkg-cache
 sudo rm -rf ~/brazil-pkg-cache-old
 ```
 
-3.stuck:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
+3.brazil stuck on:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
 2021-10-20 00:55:53 INFO [NodeJS-8.x/runtime] Caching runtime components of dependencies
 
 Todo:
