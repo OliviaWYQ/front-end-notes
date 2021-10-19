@@ -17,9 +17,7 @@ brazil ws sync --md
 
 Todo:
 ```
-brazil-package-cache stop && \
-mv ~/brazil-pkg-cache ~/brazil-pkg-cache-old && \
-rm -rf ~/brazil-pkg-cache-old &
+sudo rm -rf /local/brazil-pkg-cache
 ```
 
 ## alias
