@@ -18,6 +18,8 @@ brazil ws sync --md
 Todo:
 ```
 sudo rm -rf /local/brazil-pkg-cache
+sudo rm -rf ~/brazil-pkg-cache
+sudo rm -rf ~/brazil-pkg-cache-old
 ```
 
 ## alias
