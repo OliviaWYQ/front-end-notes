@@ -22,6 +22,16 @@ sudo rm -rf ~/brazil-pkg-cache
 sudo rm -rf ~/brazil-pkg-cache-old
 ```
 
+3.stuck:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
+2021-10-20 00:55:53 INFO [NodeJS-8.x/runtime] Caching runtime components of dependencies
+
+Todo:
+```
+toolbox update brazilcli
+brazil prefs --global --key packagecache.edgeCache --value auto
+brazil-package-cache stop && brazil-package-cache start --debug
+```
+
 ## alias
 
 alias bb="brazil-build"
