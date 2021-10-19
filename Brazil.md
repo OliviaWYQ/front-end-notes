@@ -2,14 +2,25 @@
 
 ## Error
 
- system(axle-platform-build): failed to run                           
+1.system(axle-platform-build): failed to run                           
                *** Be sure to declare a build-tool dependency on the package that               
   *** defines the 'axle-platform-build' command, and that the command is marked as executable.  
-                                                                                                
-Failed to run command: 'axle-platform-build' with arguments 'clean'
+             Failed to run command: 'axle-platform-build' with arguments 'clean'
 
-Todo: brazil ws sync --md
+Todo: 
+```
+brazil ws sync --md
+```
 
+2.SEVERE com.amazon.brazil.pkgcacher.CachingException: [UNKNOWN_ERROR] Error occurred while caching AL2_x86_64-NodeJS-8.x.319784.0-Catalog. DiskSpaceLimitException: Disk Usage is above 95%. Caching failed with /Users/yiqiawan/brazil-pkg-cache/tmp/download9033165582557653018/Catalog.
+ Please see https://builderhub.corp.amazon.com/docs/brazil/user-guide/howto-package-cache-cleanup.html to clean up your disk.
+
+Todo:
+```
+brazil-package-cache stop && \
+mv ~/brazil-pkg-cache ~/brazil-pkg-cache-old && \
+rm -rf ~/brazil-pkg-cache-old &
+```
 
 ## alias
 
