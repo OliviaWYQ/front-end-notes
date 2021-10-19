@@ -1,5 +1,16 @@
 # Brazil notes
 
+## Error
+
+ system(axle-platform-build): failed to run                           
+               *** Be sure to declare a build-tool dependency on the package that               
+  *** defines the 'axle-platform-build' command, and that the command is marked as executable.  
+                                                                                                
+Failed to run command: 'axle-platform-build' with arguments 'clean'
+
+Todo: brazil ws sync --md
+
+
 ## alias
 
 alias bb="brazil-build"
