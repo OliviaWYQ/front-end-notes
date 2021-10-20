@@ -33,6 +33,11 @@ sudo rm -rf ~/brazil-pkg-cache-old
 if still no work:
 toolbox uninstall brazilcli
 toolbox install brazilcli
+
+if still no work:
+brazil prefs --global --key packagecache.edgeCache --value auto
+brazil-package-cache stop && brazil-package-cache start
+
 ```
 
 3.brazil stuck on:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
@@ -43,6 +48,11 @@ Todo:
 toolbox update brazilcli
 brazil prefs --global --key packagecache.edgeCache --value auto
 brazil-package-cache stop && brazil-package-cache start --debug
+```
+
+4.brazil error: WARNING Lost connection to package cache daemon. Retrying request.
+```
+brazil-package-cache enable_edge_cache
 ```
 
 ## alias
