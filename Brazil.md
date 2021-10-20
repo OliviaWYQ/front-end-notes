@@ -19,6 +19,8 @@ Todo:
 ```
 brazil-package-cache clean
 
+brazil-package-cache clean --days 0 --keepCacheHours 0
+
 brazil-package-cache stop && \
 mv ~/brazil-pkg-cache ~/brazil-pkg-cache-old && \
 rm -rf ~/brazil-pkg-cache-old &
