@@ -29,6 +29,10 @@ if still no work:
 sudo rm -rf /local/brazil-pkg-cache
 sudo rm -rf ~/brazil-pkg-cache
 sudo rm -rf ~/brazil-pkg-cache-old
+
+if still no work:
+toolbox uninstall brazilcli
+toolbox install brazilcli
 ```
 
 3.brazil stuck on:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
