@@ -19,6 +19,10 @@ Todo:
 ```
 brazil-package-cache clean
 
+brazil-package-cache stop && \
+mv ~/brazil-pkg-cache ~/brazil-pkg-cache-old && \
+rm -rf ~/brazil-pkg-cache-old &
+
 if still no work:
 sudo rm -rf /local/brazil-pkg-cache
 sudo rm -rf ~/brazil-pkg-cache
