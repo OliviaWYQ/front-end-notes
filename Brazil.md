@@ -2,6 +2,7 @@
 
 ## make brazil faster
 
+Download Create RAM Disk https://bogner.sh/2012/12/os-x-create-a-ram-disk-the-easy-way/
 You can use something like this to create a Ram Disk.
 
 After that you can create build and env directories on the Ram Disk (In my case /Volumes/Build RAM Disk/) I created a 2GB Ram Disk as I only have 8GB Ram on my mac, you could create a bigger one depending on how much Ram you have.
