@@ -24,4 +24,4 @@ Execution failed for task ':stripDebugDebugSymbols'.
 No version of NDK matched the requested version 20.0.5594570. Versions available locally: 22.1.7171670
 
 Todo:
-Install NDK to match the version
+Install older NDK to match the version from https://github.com/android/ndk/wiki/Unsupported-Downloads
