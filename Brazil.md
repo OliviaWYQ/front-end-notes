@@ -77,6 +77,8 @@ brazil-package-cache enable_edge_cache
 ```
 
 ## alias
+```
+vim ~/.bash_profile
 
 alias bb="brazil-build"
 alias bbs="brazil-build start"
@@ -88,6 +90,10 @@ alias bbrall="brazil-recursive-cmd --allPackages brazil-build release"
 alias bwc="brazil ws clean"
 alias bws="brazil ws sync"
 alias bwsm="brazil ws sync --md"
+
+source ~/.bash_profile
+
+```
 
 ## rebuild all packages
 ```
