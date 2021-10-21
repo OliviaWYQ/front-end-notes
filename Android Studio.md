@@ -24,8 +24,22 @@ Execution failed for task ':stripDebugDebugSymbols'.
 No version of NDK matched the requested version 20.0.5594570. Versions available locally: 22.1.7171670
 
 Todo:
+```
 Install older NDK android-ndk-r20b-darwin-x86_64.zip to match the version from https://github.com/android/ndk/wiki/Unsupported-Downloads
 Extract the file inside folder /Users/yiqiawan/Library/Android/sdk/ndk named 20.0.5594570
+
+if not work:
+For MacOS, check via Terminal:
+
+cd ~/Library/Android/sdk
+ls
+
+If you see “ndk” and/or “ndk-bundle”, delete them:
+
+sudo rm -r ndk/
+sudo rm -r ndk-bundle/
+```
+
 
 ## Gradle
 
