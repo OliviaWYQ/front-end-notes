@@ -1,5 +1,22 @@
 # Brazil notes
 
+## make brazil faster
+
+You can use something like this to create a Ram Disk.
+
+After that you can create build and env directories on the Ram Disk (In my case /Volumes/Build RAM Disk/) I created a 2GB Ram Disk as I only have 8GB Ram on my mac, you could create a bigger one depending on how much Ram you have.
+```
+mkdir /Volumes/Build\ RAM\ Disk/build
+mkdir /Volumes/Build\ RAM\ Disk/env
+```
+Then in your workspace remove the build directories and create symlinks to the build directories on the Ram Disk
+```
+rm -rf build env
+ln -s /Volumes/Build\ RAM\ Disk/env env
+ln -s /Volumes/Build\ RAM\ Disk/build build
+```
+After this your builds will be much faster and your system should no longer hang during builds. If this works for you then writing a shell script that attaches your current workspace to the Ram Disk should be trivial.
+
 ## brazil error
 
 1.error message: system(axle-platform-build): failed to run                           
