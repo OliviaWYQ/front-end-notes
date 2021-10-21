@@ -26,3 +26,7 @@ No version of NDK matched the requested version 20.0.5594570. Versions available
 Todo:
 Install older NDK android-ndk-r20b-darwin-x86_64.zip to match the version from https://github.com/android/ndk/wiki/Unsupported-Downloads
 Extract the file inside folder /Users/yiqiawan/Library/Android/sdk/ndk named 20.0.5594570
+
+## Gradle
+use gradle from
+/Users/yiqiawan/AxleApp/env/GradleTrails-4.0/runtime
