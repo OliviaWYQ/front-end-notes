@@ -38,6 +38,9 @@ if still no work:
 brazil prefs --global --key packagecache.edgeCache --value auto
 brazil-package-cache stop && brazil-package-cache start
 
+if the problem comes from mac system:
+Write 20gb of data from /dev/random to a file in /tmp. This forces macOS to start purging unused capacity.
+sudo dd if=/dev/urandom of=/tmp/target-file bs=100m count=200
 ```
 
 3.brazil stuck on:[NodeJS-8.x/runtime] Building symlink farm of 8 packages from package cache
