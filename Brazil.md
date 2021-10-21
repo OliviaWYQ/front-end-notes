@@ -79,14 +79,15 @@ brazil-package-cache enable_edge_cache
 ## alias
 
 alias bb="brazil-build"
-
-alias bws="brazil ws"
-
+alias bbs="brazil-build start"
+alias bbsa="brazil-build server-axle"
+alias bbc="brazil-build clean"
 alias bbr="brazil-build release"
-
-alias abb='brazil ws clean; brazil-recursive-cmd --allPackages brazil-build release'
-
-bb fix do both format-fix and lint-fix
+alias bbcall="brazil-recursive-cmd brazil-build clean"
+alias bbrall="brazil-recursive-cmd --allPackages brazil-build release"
+alias bwc="brazil ws clean"
+alias bws="brazil ws sync"
+alias bwsm="brazil ws sync --md"
 
 ## rebuild all packages
 ```
