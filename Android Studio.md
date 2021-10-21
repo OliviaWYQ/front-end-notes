@@ -28,5 +28,7 @@ Install older NDK android-ndk-r20b-darwin-x86_64.zip to match the version from h
 Extract the file inside folder /Users/yiqiawan/Library/Android/sdk/ndk named 20.0.5594570
 
 ## Gradle
-use gradle from
-/Users/yiqiawan/AxleApp/env/GradleTrails-4.0/runtime
+
+go to "Build, Execution & Deployment → Gradle", select "Use local gradle distribution" and enter that same path in the "Gradle home" box instead and hit "Ok"
+
+use gradle from:/Users/yiqiawan/AxleApp/env/GradleTrails-4.0/runtime
