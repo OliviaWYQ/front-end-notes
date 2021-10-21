@@ -19,9 +19,9 @@ press command+M
 
 ## Build Error
 
-* What went wrong:
+What went wrong:
 Execution failed for task ':stripDebugDebugSymbols'.
-> No version of NDK matched the requested version 20.0.5594570. Versions available locally: 22.1.7171670
+No version of NDK matched the requested version 20.0.5594570. Versions available locally: 22.1.7171670
 
 Todo:
 Install NDK to match the version
