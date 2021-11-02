@@ -10,6 +10,11 @@ brazil-build release
 open AxleIOS.xcworkspace
 ```
 
+## bbxcode env: command 'custom-build' with arguments 'xcode-env' exited with return code '117'  
+```
+mwinit
+```
+
 ## Ruby settings
 
 ### /lib64/ld-linux-x86-64.so.2: No such file or directory
