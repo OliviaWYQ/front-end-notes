@@ -127,6 +127,17 @@ brazil-build clean
 brazil-build release
 ```
 
+### PermanentDownloadException: 403: Forbidden
+```
+mwinit -o
+
+brazil-package-cache stop
+brazil prefs --global --key packagecache.useBrazilCdn --value true
+brazil prefs --global --key packagecache.edgeCache --value false
+brazil prefs --global --key packagecache.disableEdgeCache --value true
+brazil-build
+```
+
 ## When Android configuring stucks on 0% and then fails
 
 ```
