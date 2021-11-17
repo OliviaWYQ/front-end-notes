@@ -130,6 +130,11 @@ brazil-build release
 ## When Android configuring stucks on 0% and then fails
 
 ```
+brazil-package-cache disable_edge_cache
+brazil-package-cache enable_edge_cache
+```
+if not have that file, create a new one
+```
 cat ~/brazil-pkg-cache/s3proxy.config
 ```
 change this content into a proper one and save 
@@ -144,6 +149,12 @@ http://braziledgecache-cn-north-1.corp.amazon.com:6081
 :wq
 ```
 restart brazil package cache
+
+```
+brazil-package-cache stop
+brazil-package-cache start
+```
+if not working, try:
 ```
 brazil-package-cache stop
 brazil-package-cache clean --days 0 --keepCacheHours 0 
